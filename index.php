@@ -9,7 +9,7 @@
   }
 
   // write query for all pizzas
-  $sql = 'SELECT title, ingredients, id FROM pizzas';
+  $sql = 'SELECT title, ingredients, id FROM pizzas ORDER BY created_at';
 
   // make query & get result
   $result = mysqli_query($conn, $sql);
